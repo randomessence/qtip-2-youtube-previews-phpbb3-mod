@@ -37,13 +37,13 @@ creates a videothumbnail
 
 <a class="ypreview" href="http://www.youtube.com/watch?v={IDENTIFIER}"><img style="width: 100px; border:1px solid black;" src="http://i.ytimg.com/vi/{IDENTIFIER}/default.jpg" alt="YouTube"    /></a>
 
-[YpreviewT]{IDENTIFIER}[/YpreviewT]]]></author-notes>
+[YpreviewT]video ID[/YpreviewT]]]></author-notes>
 		<author-group>
 			<author>
 				<username><![CDATA[randomessence]]></username>
 			</author>
 		</author-group>
-		<mod-version>0.7.0</mod-version>
+		<mod-version>0.8.5</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>60</time>
@@ -57,28 +57,73 @@ creates a videothumbnail
 					<change><![CDATA[a working mod no major bugs]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2012-01-22</date>
+				<rev-version>0.8.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[tweaked install.xml]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-01-22</date>
+				<rev-version>0.8.5</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[tweaked install.xml added {ROOT_PATH]]></change>
+				</changelog>
+			</entry>
 		</history>
 	</header>
 	<action-group>
 		<copy>
 			<file from="root/*.*" to="*.*"/>
+			<file from="root/styles/prosilver/template/qtip2/*.*" to="styles/prosilver/template/qtip2/*.*"/>
 		</copy>
 		<open src="styles/prosilver/template/overall_header.html">
 			<edit>
 				<find><![CDATA[<head>]]></find>
 				<action type="after-add"><![CDATA[<script type="text/javascript">
 // ]]>&lt;![CDATA[<![CDATA[
-!window.jQuery && document.write('<script type="text\/javascript" src="js/jquery/jquery-1.7.1.min.js"><\/script>');
+!window.jQuery && document.write('<script type="text\/javascript" src="{ROOT_PATH}js/jquery/jquery-1.7.1.min.js"><\/script>');
 // ]]>]]&gt;<![CDATA[
 </script>]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[</head>]]></find>
 				<action type="before-add"><![CDATA[<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
-<script type="text/javascript" src="js/qtip2/js/jquery.qtip2.js"></script>
-<link type="text/css" rel="stylesheet" href="js/qtip2/css/jquery.qtip2.css" />
+<script type="text/javascript" src="{ROOT_PATH}js/qtip2/js/jquery.qtip2.js"></script>
+<link type="text/css" rel="stylesheet" href="{ROOT_PATH}js/qtip2/css/jquery.qtip2.css" />
 <script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/ypreview.js"></script>]]></action>
 			</edit>
 		</open>
+		<diy-instructions lang="en"><![CDATA[depending on the version of this mod you might need to use custom bbcodes for this to work.
+
+normal link
+
+[Ypreview]{URL}[/Ypreview]
+
+<a class="ypreview" href="{URL}">{URL}</a>
+
+[Ypreview]ww.youtubevideohere.com[/Ypreview]
+
+-------
+
+link with custom description
+
+[Ypreview={SIMPLETEXT}]{URL}[/Ypreview]
+
+<a class="ypreview" href="{URL}">{SIMPLETEXT}</a>
+
+[Ypreview=text here]www.youtubevideohere.com[/Ypreview]
+
+
+-------
+
+creates a videothumbnail
+
+[YpreviewT]{IDENTIFIER}[/YpreviewT]
+
+<a class="ypreview" href="http://www.youtube.com/watch?v={IDENTIFIER}"><img style="width: 100px; border:1px solid black;" src="http://i.ytimg.com/vi/{IDENTIFIER}/default.jpg" alt="YouTube"    /></a>
+
+[YpreviewT]video ID[/YpreviewT]]]></diy-instructions>
 	</action-group>
 </mod>
