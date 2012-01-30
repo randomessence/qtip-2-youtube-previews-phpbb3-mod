@@ -2,14 +2,14 @@
 * qTip2 - Pretty powerful tooltips
 * http://craigsworks.com/projects/qtip2/
 *
-* Version: 2.0.0pre
+* Version: nightly
 * Copyright 2009-2010 Craig Michael Thompson - http://craigsworks.com
 *
 * Dual licensed under MIT or GPLv2 licenses
 *   http://en.wikipedia.org/wiki/MIT_License
 *   http://en.wikipedia.org/wiki/GNU_General_Public_License
 *
-* Date: Fri Jan 13 16:51:35 2012 +0000
+* Date: Sun Jan 29 08:19:56.0000000000 2012
 */
 
 /* Core qTip styles */
@@ -135,6 +135,28 @@
 		color: #111;
 	}
 
+/* Tips plugin */
+.ui-tooltip .ui-tooltip-tip{
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 10;
+}
+
+	.ui-tooltip .ui-tooltip-tip,
+	.ui-tooltip .ui-tooltip-tip *{
+		position: absolute;
+		
+		line-height: 0.1px !important;
+		font-size: 0.1px !important;
+		color: #123456;
+
+		background: transparent;
+		border: 0px dashed transparent;
+	}
+	
+	.ui-tooltip .ui-tooltip-tip canvas{ top: 0; left: 0; }
+
+
 /* Modal plugin */
 #qtip-overlay{
 	position: fixed;
@@ -157,28 +179,6 @@
 		filter:alpha(opacity=70);
 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	}
-
-/* Tips plugin */
-.ui-tooltip .ui-tooltip-tip{
-	margin: 0 auto;
-	overflow: hidden;
-	z-index: 10;
-}
-
-	.ui-tooltip .ui-tooltip-tip,
-	.ui-tooltip .ui-tooltip-tip *{
-		position: absolute;
-		
-		line-height: 0.1px !important;
-		font-size: 0.1px !important;
-		color: #123456;
-
-		background: transparent;
-		border: 0px dashed transparent;
-	}
-	
-	.ui-tooltip .ui-tooltip-tip canvas{ top: 0; left: 0; }
-
 
 /*! Light tooltip style */
 .ui-tooltip-light .ui-tooltip-titlebar,
@@ -565,3 +565,5 @@
 .ui-tooltip-youtube .ui-tooltip-content{
    padding: 0; 
 }
+
+
