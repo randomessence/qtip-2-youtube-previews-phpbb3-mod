@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[qtip2 yoututbe previews 0.8.6]]></title>
+		<title lang="en"><![CDATA[qtip2 yoututbe previews 0.8.8]]></title>
 		<description lang="en"><![CDATA[a mod that uses the jquery qtip 2 plugin to show a fast loading preview of a youtube video.]]></description>
 		<author-notes lang="en"><![CDATA[depending on the version of this mod you might need to use custom bbcodes for this to work.
 
@@ -83,6 +83,13 @@ creates a videothumbnail
 				<rev-version>0.8.6</rev-version>
 				<changelog lang="en">
 					<change><![CDATA[updated scripts, fixed a bug with href link]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-06-02</date>
+				<rev-version>0.8.8</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[updated qtip, updated youtube script for new and more]]></change>
 				</changelog>
 			</entry>
 		</history>
