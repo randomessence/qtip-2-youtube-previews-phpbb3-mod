@@ -72,6 +72,13 @@ creates a videothumbnail
 				</changelog>
 			</entry>
 			<entry>
+				<date>2012-05-30</date>
+				<rev-version>0.8.6</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[updated script]]></change>
+				</changelog>
+			</entry>
+			<entry>
 				<date>2012-01-23</date>
 				<rev-version>0.8.6</rev-version>
 				<changelog lang="en">
@@ -90,15 +97,15 @@ creates a videothumbnail
 				<find><![CDATA[<head>]]></find>
 				<action type="after-add"><![CDATA[<script type="text/javascript">
 // ]]>&lt;![CDATA[<![CDATA[
-!window.jQuery && document.write('<script type="text\/javascript" src="{ROOT_PATH}js/jquery/jquery-1.7.1.min.js"><\/script>');
+!window.jQuery && document.write('<script type="text\/javascript" src="{ROOT_PATH}js/jquery/jquery-1.7.2.min.js"><\/script>');
 // ]]>]]&gt;<![CDATA[
 </script>]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[</head>]]></find>
 				<action type="before-add"><![CDATA[<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
-<script type="text/javascript" src="{ROOT_PATH}js/qtip2/js/jquery.qtip2.js"></script>
-<link type="text/css" rel="stylesheet" href="{ROOT_PATH}js/qtip2/css/jquery.qtip2.css" />
+<script type="text/javascript" src="{ROOT_PATH}js/qtip2/js/jquery.qtip.min.js"></script>
+<link type="text/css" rel="stylesheet" href="{ROOT_PATH}js/qtip2/css/jquery.qtip.css" />
 <script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/ypreview.js"></script>]]></action>
 			</edit>
 		</open>
