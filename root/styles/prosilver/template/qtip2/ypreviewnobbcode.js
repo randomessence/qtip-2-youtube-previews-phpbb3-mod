@@ -22,8 +22,8 @@ $(document).ready(function()
 			// Stick in a dummy <div /> we can use to embed the player and set it's ID
 			content: $('<div />', { id: videoID }),
 			position: {
-				at: 'bottom center',
-				my: 'top center',
+				at: 'top center',
+				my: 'bottom left',
 				viewport: $(window) // Keep it on-screen at all times if possible
 			},
 			show: {

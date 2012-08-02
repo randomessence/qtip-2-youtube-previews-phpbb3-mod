@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[qtip2 yoututbe previews 0.9.0 with bbcodes]]></title>
+		<title lang="en"><![CDATA[qtip2 yoututbe previews 0.9.0 with NO bbcodes]]></title>
 		<description lang="en"><![CDATA[a mod that uses the jquery qtip 2 plugin to show a fast loading preview of a youtube video.
 
 these bits of codes are pretty much copy and pastes of the http://craigsworks.com/projects/qtip2/demos/
@@ -144,8 +144,8 @@ For Vimeo Videos
 <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
 <script type="text/javascript" src="{ROOT_PATH}js/qtip2/js/jquery.qtip.min.js"></script>
 <link type="text/css" rel="stylesheet" href="{ROOT_PATH}js/qtip2/css/jquery.qtip.css" />
-<script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/ypreview.js"></script>
-<script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/vpreview.js"></script>]]></action>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/ypreviewnobbcode.js"></script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/qtip2/vpreviewnobbcode.js"></script>]]></action>
 			</edit>
 		</open>
 		<diy-instructions lang="en"><![CDATA[depending on the version of this mod you might need to use custom bbcodes for this to work.

@@ -561,11 +561,11 @@
 
 .ui-tooltip-youtube{
 	/* We set the width explicitly in the qTip config */
-	height: 180px;
+	height: 155px;
 	max-width: none;
 }
  
 /* No padding for the content so it's flush with the border too! */
 .ui-tooltip-youtube .ui-tooltip-content{
-	padding: 0; 
+	padding: 0px; 
 }
