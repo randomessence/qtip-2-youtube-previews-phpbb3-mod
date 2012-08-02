@@ -56,7 +56,7 @@ $(document).ready(function()
 							origin: document.location.host
 						},
 						origin: document.location.host,
-						height: 180,
+						height: 220,
 						width: 275,
 						videoId: videoID.substr(0, 11), // YouTube ID's are only 11 characters long :)
 						events: {
