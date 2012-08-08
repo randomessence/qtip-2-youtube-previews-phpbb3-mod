@@ -574,14 +574,7 @@
 .ui-tooltip-flickr{
 	max-width: 1080px;
 }
- 
-	/* Adds the flickr favicon to the top right of the tooltip :) */
-	.ui-tooltip-flickr .ui-tooltip-titlebar{
-		background-image: url('http://l.yimg.com/g/favicon.ico');
-		background-repeat: no-repeat;
-		background-position: 97% 7px;
-	}
- 
+  
 	.ui-tooltip-flickr .ui-tooltip-title{
 		padding-right: 0;
 	}
