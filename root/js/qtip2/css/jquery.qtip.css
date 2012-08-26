@@ -1,4 +1,4 @@
-/*! qTip2 - Pretty powerful tooltips - v2.0.0 - 2012-07-24
+/*! qTip2 - Pretty powerful tooltips - v2.0.0 - 2012-08-14
 * http://craigsworks.com/projects/qtip2/
 * Copyright (c) 2012 Craig Michael Thompson; Licensed MIT, GPL */
 
@@ -559,7 +559,7 @@
 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	}
 
-.ui-tooltip-youtube{
+	.ui-tooltip-youtube{
 	/* We set the width explicitly in the qTip config */
 	height: 155px;
 	max-width: none;
@@ -582,3 +582,4 @@
 	.ui-tooltip-flickr img{
 		margin: 0 auto;
 	}
+
