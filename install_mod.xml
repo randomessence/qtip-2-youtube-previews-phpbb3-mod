@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[qtip2 yoututbe previews 0.9.1 with bbcodes]]></title>
+		<title lang="en"><![CDATA[qtip2 yoututbe previews 0.9.2 with bbcodes]]></title>
 		<description lang="en"><![CDATA[a mod that uses the jquery qtip 2 plugin to show a fast loading preview of a youtube video.
 
 these bits of codes are pretty much copy and pastes of the http://craigsworks.com/projects/qtip2/demos/
@@ -65,7 +65,7 @@ For Vimeo Videos
 				<username><![CDATA[randomessence]]></username>
 			</author>
 		</author-group>
-		<mod-version>0.9.1</mod-version>
+		<mod-version>0.9.2</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>60</time>
@@ -141,7 +141,7 @@ For Vimeo Videos
 				<find><![CDATA[<head>]]></find>
 				<action type="after-add"><![CDATA[<script type="text/javascript">
 // ]]>&lt;![CDATA[<![CDATA[
-!window.jQuery && document.write('<script type="text\/javascript" src="{ROOT_PATH}js/jquery/jquery-1.8.0.min.js"><\/script>');
+!window.jQuery && document.write('<script type="text\/javascript" src="{ROOT_PATH}js/jquery/jquery-1.8.2.min.js"><\/script>');
 // ]]>]]&gt;<![CDATA[
 </script>]]></action>
 			</edit>
