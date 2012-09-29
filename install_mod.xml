@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[qtip2 yoututbe previews 0.9.2 with bbcodes]]></title>
+		<title lang="en"><![CDATA[qtip2 yoututbe previews 0.9.3 with bbcodes]]></title>
 		<description lang="en"><![CDATA[a mod that uses the jquery qtip 2 plugin to show a fast loading preview of a youtube video.
 
 these bits of codes are pretty much copy and pastes of the http://craigsworks.com/projects/qtip2/demos/
@@ -65,7 +65,7 @@ For Vimeo Videos
 				<username><![CDATA[randomessence]]></username>
 			</author>
 		</author-group>
-		<mod-version>0.9.2</mod-version>
+		<mod-version>0.9.3</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>60</time>
@@ -94,17 +94,17 @@ For Vimeo Videos
 				</changelog>
 			</entry>
 			<entry>
-				<date>2012-01-23</date>
-				<rev-version>0.8.6</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[updated scripts, fixed a bug with href link]]></change>
-				</changelog>
-			</entry>
-			<entry>
 				<date>2012-05-30</date>
 				<rev-version>0.8.6</rev-version>
 				<changelog lang="en">
 					<change><![CDATA[updated script]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-01-23</date>
+				<rev-version>0.8.6</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[updated scripts, fixed a bug with href link]]></change>
 				</changelog>
 			</entry>
 			<entry>
@@ -129,6 +129,13 @@ For Vimeo Videos
 					<change><![CDATA[updated qtip2]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2012-09-29</date>
+				<rev-version>0.9.3</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[bringing inline with new update policy]]></change>
+				</changelog>
+			</entry>
 		</history>
 	</header>
 	<action-group>
@@ -141,7 +148,7 @@ For Vimeo Videos
 				<find><![CDATA[<head>]]></find>
 				<action type="after-add"><![CDATA[<script type="text/javascript">
 // ]]>&lt;![CDATA[<![CDATA[
-!window.jQuery && document.write('<script type="text\/javascript" src="{ROOT_PATH}js/jquery/jquery-1.8.2.min.js"><\/script>');
+!window.jQuery && document.write('<script type="text\/javascript" src="{ROOT_PATH}js/jquery/jquery.js"><\/script>');
 // ]]>]]&gt;<![CDATA[
 </script>]]></action>
 			</edit>
