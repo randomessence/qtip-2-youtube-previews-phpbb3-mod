@@ -598,26 +598,24 @@
 	position: absolute !important;
 }
 
-.ui-tooltip-youtube{
+.qtip-youtube{
 	/* We set the width explicitly in the qTip config */
 	height: none;
 	max-width: none;
 }
  
 /* No padding for the content so it's flush with the border too! */
-.ui-tooltip-youtube .ui-tooltip-content{
+.qtip-youtube .qtip-content{
 	padding: 0px; 
 }
 
 /* Set a slightly bigger max-width so we can fit in our photos */
-.ui-tooltip-flickr{
-	max-width: 1080px;
+
+.qtip-blue {
+	max-width: none;
 }
-  
-	.ui-tooltip-flickr .ui-tooltip-title{
-		padding-right: 0;
-	}
- 
-	.ui-tooltip-flickr img{
-		margin: 0 auto;
-	}
+
+.qtip-blue .qtip-content {
+	max-width: none;
+	padding: 0px;
+}

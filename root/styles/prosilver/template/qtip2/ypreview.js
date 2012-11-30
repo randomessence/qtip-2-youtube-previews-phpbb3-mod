@@ -44,7 +44,7 @@ $(document).ready(function()
 			},
 			hide: 'unfocus', // Hide when the tooltip loses focus
 			style: {
-				classes: 'ui-tooltip-youtube', // Use a custom tooltip class
+				classes: 'qtip-youtube', // Use a custom tooltip class
 				width: 275 // Set a static width
 			},
 			events: {
